@@ -1,0 +1,61 @@
+/* Body and container */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000; /* Black background */
+    color: white; /* White text for contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+.game-container {
+    background-color: #2c3e50; /* Dark blue background for the game */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8); /* Shadow around the container */
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#playerChoice img {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    margin: 10px;
+    transition: transform 0.2s ease-in-out;
+}
+
+#playerChoice img:hover {
+    transform: scale(1.1);
+}
+
+/* Result display */
+#result {
+    margin-top: 20px;
+}
+
+#result h2 {
+    color: #e74c3c; /* Red text for winner */
+}
+
+#result p {
+    font-size: 1.2rem;
+}
+
+.move-image {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+/* Styling for move descriptions */
+#playerMove, #computerMove {
+    display: inline-block;
+    margin-top: 10px;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="rock-paper-scissors/styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Rock, Paper, Scissors</h1>
+        <div id="playerChoice">
+            <!-- Remove the static images; they will be dynamically fetched from the API -->
+            <button class="choice" id="rock">Rock</button>
+            <button class="choice" id="paper">Paper</button>
+            <button class="choice" id="scissors">Scissors</button>
+        </div>
+        <div id="result">
+            <p>Choose your move!</p>
+            <div id="playerMove">
+                <h3>Your Move:</h3>
+                <!-- Player's choice image will be set dynamically -->
+                <img id="playerImage" src="" alt="Player Move" class="move-image">
+            </div>
+            <div id="computerMove">
+                <h3>Computer's Move:</h3>
+                <!-- Computer's choice image will be set dynamically -->
+                <img id="computerImage" src="" alt="Computer Move" class="move-image">
+            </div>
+            <h2 id="winner"></h2> <!-- Display result message -->
+        </div>
+    </div>
+    <script src="rock-paper-scissors/script.js"></script>
+</body>
+</html>
